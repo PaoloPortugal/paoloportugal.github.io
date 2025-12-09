@@ -69,7 +69,7 @@ permalink: /my-games/
   <div class="games-grid">
     <a class="game-link" href="/my-games/wumpus-world/" aria-label="Open Wumpus World">
       <article class="game-card">
-        <img class="game-thumb" src="/website/assets/pictures/games/thumbnails/wumpus-world.p8.png" alt="Wumpus World thumbnail" />
+        <img class="game-thumb" src="/assets/pictures/games/thumbnails/wumpus-world.p8.png" alt="Wumpus World thumbnail" />
         <div class="game-body">
           <h3 class="game-title">Wumpus World</h3>
         </div>

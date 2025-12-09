@@ -73,7 +73,7 @@ permalink: /about/
   </div>
   <img
     class="about-photo"
-    src="{{ site.author.photo | default: '/assets/icon.svg' }}"
+    src="{{ assets/pictures/me/face.svg }}"
     alt="Photo of {{ site.title }}"
   />
   

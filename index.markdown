@@ -52,6 +52,6 @@ permalink: /
     </div>
 
     <!-- Logo on the right of the name -->
-    <img class="landing-logo" src="/website/assets/pictures/me/logo.svg" alt="Site logo" />
+    <img class="landing-logo" src="assets/pictures/me/logo.svg" alt="Site logo" />
   </div>
 </div>

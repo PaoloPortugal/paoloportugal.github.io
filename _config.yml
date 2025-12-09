@@ -30,12 +30,12 @@ github_username:  PaoloPortugal
 # Navigation
 # These pages will appear in the top navigation of the Minima theme
 header_pages:
-  - website/about.markdown
-  - website/games/index.markdown
+  - about.markdown
+  - my-games.markdown
 
 # Author/Profile
 author:
-  photo: /website/assets/pictures/me/face.svg # replace with your real photo path, e.g. /assets/paolo.jpg
+  photo: assets/pictures/me/face.svg
 
 # Build settings
 theme: minima
