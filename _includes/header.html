@@ -1,0 +1,120 @@
+<header class="site-header" role="banner">
+  <style>
+    /* Fancy header styles */
+    :root{
+      --site-max:1280px;
+      --site-pad:clamp(16px,3vw,40px);
+      /* Dark theme palette */
+      --bg:#0f172a;           /* slate-900 */
+      --surface:#111827;      /* gray-900 */
+      --text:#e5e7eb;         /* gray-200 */
+      --text-muted:rgba(229,231,235,0.7);
+      --border:rgba(255,255,255,0.08);
+      --border-strong:rgba(255,255,255,0.14);
+      --accent:#8b5cf6;       /* violet-500 */
+      --accent-weak:rgba(139,92,246,0.16);
+    }
+
+    /* Global dark theme application */
+    html, body { background: var(--bg); color: var(--text); }
+    a { color: var(--text); }
+    .page-content .wrapper, .site-header .wrapper, .site-footer .wrapper {
+      max-width: var(--site-max);
+      padding-left: var(--site-pad);
+      padding-right: var(--site-pad);
+    }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      /* Base translucent surface with full-width accent gradient */
+      background-color: rgba(17,24,39,0.72);
+      background-image: linear-gradient(90deg, rgba(139,92,246,0.25) 0%, rgba(17,24,39,0.0) 32%, rgba(17,24,39,0.0) 68%, rgba(139,92,246,0.25) 100%);
+      backdrop-filter: saturate(140%) blur(8px);
+      border-bottom: 1px solid var(--border);
+    }
+    .site-header .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; /* allow nav to be pushed further right */
+      padding: 0.9rem 1rem;
+      /* Move the nav further to the right edge than normal content */
+      padding-right: 0;
+    }
+    .header-left { display: flex; align-items: center; min-width: 0; }
+    .header-title {
+      margin: 0;
+      font-size: clamp(1.25rem, 3.5vw, 1.75rem);
+      font-weight: 900;
+      letter-spacing: .3px;
+      color: var(--text);
+      position: relative;
+      line-height: 1.1;
+    }
+    /* Accent underline under the header title */
+    .header-title::after{
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -12px; /* pushed further down to avoid overlapping descenders */
+      width: clamp(72px, 18vw, 180px);
+      height: 4px; /* slightly thinner for a cleaner look */
+      border-radius: 999px;
+      background: var(--accent); /* solid color (no gradient) */
+      opacity: .95;
+    }
+    .site-nav {
+      display: flex;
+      gap: .35rem;
+      align-items: center;
+      margin-left: auto; /* push to the extreme right */
+    }
+    .site-nav a {
+      position: relative;
+      display: inline-block;
+      padding: .5rem .75rem;
+      border-radius: 10px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+      transition: color .18s ease, transform .18s ease, background-color .18s ease, box-shadow .18s ease;
+    }
+    .site-nav a::after {
+      content: "";
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      bottom: 6px;
+      height: 6px;
+      border-radius: 6px;
+      background: var(--accent-weak);
+      transform: translateY(6px);
+      opacity: 0;
+      transition: all .18s ease;
+      pointer-events: none;
+    }
+    .site-nav a:hover {
+      color: #ffffff;
+      background: rgba(139,92,246,0.12);
+      box-shadow: 0 6px 18px rgba(139,92,246,0.28);
+      transform: translateY(-1px);
+    }
+    .site-nav a:hover::after { opacity: 1; transform: translateY(0); }
+    @media (max-width: 640px) {
+      .site-header .wrapper { flex-wrap: wrap; gap: .5rem; }
+    }
+    /* Hide in-content automatic titles since we now render the title in the header */
+    .page-content h1.post-title, .page-content h1.page-title { display: none; }
+  </style>
+
+  <div class="wrapper">
+    <div class="header-left">
+      <h1 class="header-title">{{ page.title }}</h1>
+    </div>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/my-games/">My Games</a>
+    </nav>
+  </div>
+</header>

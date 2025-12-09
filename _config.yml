@@ -20,17 +20,26 @@
 
 title: Paolo Portugal
 email: portugalpaolo7@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Nothing here for now!
-domain: paoloportugal.github.io      # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+#description: >- # this means to ignore newlines until "baseurl:"
+#  Nothing here for now!
+#baseurl: # place folder name if the site is served in a subfolder
 url: https://paoloportugal.github.io  # the base hostname and protocol for your site, e.g. http://example.com
-baseurl: /paoloportugal.github.io/      # place folder name if the site is served in a subfolder
+domain: paoloportugal.github.io      # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
 github_username:  PaoloPortugal
+
+# Navigation
+# These pages will appear in the top navigation of the Minima theme
+header_pages:
+  - website/about.markdown
+  - website/games/index.markdown
+
+# Author/Profile
+author:
+  photo: /website/assets/pictures/me/face.svg # replace with your real photo path, e.g. /assets/paolo.jpg
 
 # Build settings
 theme: minima
-plugins:
-  - jekyll-feed
+plugins: []
 
 # Exclude from processing.
 # The following items will not be processed, by default.
