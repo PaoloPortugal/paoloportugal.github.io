@@ -31,5 +31,12 @@ permalink: /my-games/pinketto/
 </style>
 
 <div class="game-embed-wrapper">
-  <iframe frameborder="0" src="https://itch.io/embed-upload/18796707?color=C92853" allowfullscreen="" width="1280" height="740"><a href="https://moofys.itch.io/pinketto">Play Pinketto on itch.io</a></iframe>
+    <iframe
+        frameborder="0"
+        src="https://itch.io/embed-upload/18796707?color=C92853"
+        allow="autoplay; fullscreen"
+        width="1280"
+        height="740">
+        <a href="https://moofys.itch.io/pinketto">Play Pinketto on itch.io</a>
+    </iframe>
 </div>

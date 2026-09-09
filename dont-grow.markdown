@@ -31,5 +31,12 @@ permalink: /my-games/dont-grow/
 </style>
 
 <div class="game-embed-wrapper">
-  <iframe frameborder="0" src="https://itch.io/embed-upload/16256347?color=327345" allowfullscreen="" width="1280" height="740"><a href="https://moofys.itch.io/dont-grow">Play Dont Grow! on itch.io</a></iframe>
+    <iframe
+        frameborder="0"
+        src="https://itch.io/embed-upload/16256347?color=327345"
+        allow="autoplay; fullscreen"
+        width="1280"
+        height="740">
+        <a href="https://moofys.itch.io/dont-grow">Play Dont Grow! on itch.io</a>
+    </iframe>
 </div>
