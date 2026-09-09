@@ -84,5 +84,26 @@ permalink: /my-games/
       </article>
     </a>
   </div>
-  
+</section>
+
+<section class="section">
+  <h2 class="section-title">Godot</h2>
+  <div class="games-grid">
+    <a class="game-link" href="/my-games/dont-grow/" aria-label="Open Dont Grow!">
+      <article class="game-card">
+        <img class="game-thumb" src="/assets/pictures/games/thumbnails/dont-grow.png" alt="Dont Grow! thumbnail" />
+        <div class="game-body">
+          <h3 class="game-title">Dont Grow!</h3>
+        </div>
+      </article>
+    </a>
+    <a class="game-link" href="/my-games/pinketto/" aria-label="Open Pinketto">
+      <article class="game-card">
+        <img class="game-thumb" src="/assets/pictures/games/thumbnails/pinketto.png" alt="Pinketto thumbnail" />
+        <div class="game-body">
+          <h3 class="game-title">Pinketto</h3>
+        </div>
+      </article>
+    </a>
+  </div>
 </section>
