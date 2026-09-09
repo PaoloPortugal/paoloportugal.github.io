@@ -75,6 +75,14 @@ permalink: /my-games/
         </div>
       </article>
     </a>
+    <a class="game-link" href="/my-games/one-last-visit/" aria-label="Open One Last Visit">
+      <article class="game-card">
+        <img class="game-thumb" src="/assets/pictures/games/thumbnails/onelastvisit.p8.png" alt="One Last Visit thumbnail" />
+        <div class="game-body">
+          <h3 class="game-title">One Last Visit</h3>
+        </div>
+      </article>
+    </a>
   </div>
   
 </section>
